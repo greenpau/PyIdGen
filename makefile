@@ -63,7 +63,7 @@ backup:
 
 git:
 	@echo "Running git commit ..."
-	@git add -A && git commit -am  "improvements"
+	@git add -A && git commit -am  "N/A"
 
 github:
 	@echo "Running github commit ..."

@@ -50,10 +50,11 @@ pypireg:
 
 pypiupload:
 	@echo "Running package build and upload to PyPI ..."
-	@#python3 setup.py sdist upload
+	@python3 setup.py sdist upload
 
 clean:
-	@echo "Running cleanup ... it is empty function"
+	@echo "Running cleanup ..."
+	@rm -rf ${APP_NAME}.egg-info/ dist/ MANIFEST
 
 backup:
 	@echo "Backup ..."

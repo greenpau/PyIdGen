@@ -19,9 +19,9 @@ from os import path
 
 pkg_dir = path.abspath(path.dirname(__file__));
 pkg_name = 'PyIdGen';
-pkg_ver = '1.1';
+pkg_ver = '1.2';
 pkg_url = 'https://github.com/greenpau/' + pkg_name;
-pkg_download_url = 'https://pypi.python.org/packages/source/P/PyIdGen/' + pkg_name + '-' + pkg_ver + '.tar.gz#md5=6b3c52d82ba882732b234a1232e358f6';
+pkg_download_url = 'http://pypi.python.org/packages/source/P/PyIdGen/' + pkg_name + '-' + pkg_ver + '.tar.gz';
 
 with open(path.join(pkg_dir, 'README.rst'), encoding='utf-8') as f:
     pkg_long_description = f.read();
@@ -36,7 +36,7 @@ setup(
     author='Paul Greenberg',
     author_email='paul@greenberg.pro',
     license='GPLv3',
-    platform='*',
+    platforms='any',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Programming Language :: Python',

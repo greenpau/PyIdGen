@@ -99,9 +99,9 @@ service of any kind.
     def main():
         a = PostalAddress();
         if a.Address2 == '':
-            template = "{0}\\n{2}, {3} {4}";
+            template = "{0}\n{2}, {3} {4}";
         else:
-            template = "{0}\\n{1}\\n{2}, {3} {4}";
+            template = "{0}\n{1}\n{2}, {3} {4}";
         print(template.format(a.Address1, a.Address2, a.City, a.State, a.ZipCode));
     
     if __name__ == '__main__':
